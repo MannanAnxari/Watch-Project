@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/20b4506959.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="about/style.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="logo" href="assets/images/logo.jpg">
+    <title>D Watch | Buy Watch</title>
+    <style>
+        .wrapper .module {
+            margin-bottom: 4rem;
+            padding-top: 4rem;
+        }
+        
+        .sec3 {
+            height: 100vh;
+        }
+        
+        .m-container {
+            width: 32rem;
+            height: 32rem;
+            margin: 20px auto;
+            perspective: 800px;
+            margin-top: -48rem;
+            margin-left: 0rem;
+        }
+        
+        .wrapper .section-title2 {
+            color: #ffffff;
+            text-transform: uppercase;
+            text-align: center;
+            position: relative;
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 50px;
+            line-height: normal;
+            letter-spacing: 0.04em;
+            height: 120px;
+            grid-column: 1/15;
+            margin-bottom: 0px;
+            padding-top: 4rem;
+        }
+        
+        .wrapper .section-title2 span {
+            color: transparent;
+            -webkit-text-stroke: 2px #d14d1a;
+            margin: 0 10px;
+        }
+        
+        .social_media {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            margin: 0rem 35rem 0rem 35rem;
+            height: 70%;
+        }
+        
+        .items {
+            margin: auto;
+        }
+        
+        .items a i {
+            color: #d14e1a83;
+            transition: .3s;
+        }
+        
+        .items a i:hover {
+            cursor: pointer;
+            transform: scale(1.2);
+            color: #f55414;
+            text-shadow: 0 0 0.5rem #d14d1a, 0 0 1rem #d14d1a, 0 0 2rem #d14d1a;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div id="sec1" class="sec" style=" background: url('assets/images/Sec1.jpg') no-repeat center; background-size: cover;">
+                <nav style="z-index: 1; position: absolute;">
+                    <div class="logo">
+                        <img class="logo" src="assets/images/logo.png">
+                    </div>
+                    <ul>
+                        <li><button class=" butn men">Men</button></li>
+                        <li class="cat"><button class=" butn women">Women</button></li>
+                        <li>
+                            <div class="search">
+                                <div class="icon"></div>
+                                <div class="input"><input type="text" id="mySearch" placeholder="Search Watches"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="reg" id="show"><i class="fa-solid fa-user"></i></div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="nav1">
+                    <ul id="myDIV">
+                        <li class="itms active0"><a href="#sec1">Home</a></li>
+                        <li class="itms"><a href="#sec2">Products</a></li>
+                        <li class="itms"><a href="#sec3">About</a></li>
+                        <li class="itms"><a href="#sec4">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="types">
+                    <div class="item itm1 hed">
+                        <h4>SMART WATCH</h4>
+                    </div>
+                    <div class="item itm2">
+
+                        <div class="heading">Super <span style="font-weight: 900;">Luxury</span><br><span style="font-weight: 900;">Super</span> Watches</div>
+                        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Aut magnam harum alias ad consectetur voluptates<br> esse sit odit excepturi officiis.</p>
+                        <p class="animated-word">BEZY</p>
+                    </div>
+                </div>
+            </div>
+            <div id="sec2" style="background: url('assets/images/Sec2.jpg') no-repeat center; background-size: cover;">
+                <div class="text_area">
+                    <div class="textIMG">
+                        <img id="src" src="assets/images/text1.png" alt="">
+                    </div>
+                    <div class="textp">
+                        <img id="src2" src="assets/images/textp.png" alt="">
+                    </div>
+                </div>
+                <div class="main_slider">
+                    <div class="m-container">
+                        <button onclick="text1change()" class="btn u-btn1"><i class="fa-solid fa-chevron-up"></i></button>
+                        <div class="cards">
+                            <div class="u-item z-positive">
+                                <img src="assets/images/card1.png" alt="">
+                            </div>
+                            <div class="u-item z-negative">
+                                <img src="assets/images/card2.png" alt="">
+                            </div>
+                        </div>
+                        <button onclick="text2change()" class="btn u-btn"><i class="fa-solid fa-angle-down"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="sec3" id="sec3" style="background: url('assets/images/Sec3.jpg') no-repeat center; background-size: cover;">
+
+
+
+                <div class="wrapper" id="home">
+
+                    <section class="module album" id="about">
+                        <h3 class="section-title"><b>About</b><span>Our Team</span></h3>
+                        <div class="content">
+                            <div class="cover">
+                                <div class="cover-img">
+                                    <img class="img-chn" id="img" src="images/about1.JPG" alt="" />
+                                </div>
+                            </div>
+                            <div class="tracks">
+                                <ul class="tracklist">
+                                    <!-- track -->
+                                    <li onclick="document.getElementById('img').src='images/about1.jpg'">
+                                        <article>
+                                            <span>01</span>
+                                            <p>Abdul-mannan</p>
+                                        </article>
+                                        <div class="icons">
+                                            <i class="like"></i>
+                                        </div>
+                                    </li>
+                                    <!-- track -->
+                                    <li onclick="document.getElementById('img').src='images/about4.jpg'">
+                                        <article>
+                                            <span>02</span>
+                                            <p>Fiona dourif</p>
+                                        </article>
+                                        <div class="icons">
+                                            <i class="like"></i>
+                                        </div>
+                                    </li>
+                                    <!-- track -->
+                                    <li onclick="document.getElementById('img').src='images/about3.jpg'">
+                                        <article>
+                                            <span>03</span>
+                                            <p>billie eilish</p>
+                                        </article>
+                                        <div class="icons">
+                                            <i class="like"></i>
+                                        </div>
+                                    </li>
+                                    <!-- track -->
+                                    <li onclick="document.getElementById('img').src='images/about2.jpg'">
+                                        <article>
+                                            <span>04</span>
+                                            <p>robert pattinson</p>
+                                        </article>
+                                        <div class="icons">
+                                            <i class="like"></i>
+                                        </div>
+                                    </li>
+                                    <!-- track -->
+                                    <li onclick="document.getElementById('img').src='images/about5.jpg'">
+                                        <article>
+                                            <span>05</span>
+                                            <p>ryan reynolds</p>
+                                        </article>
+                                        <div class="icons">
+                                            <i class="like"></i>
+                                        </div>
+                                    </li>
+                                    <!-- track -->
+                                </ul>
+                            </div>
+
+                            <div class="button-container">
+                                <a href="#" target="_blank"><button class="about_btn">Download cv</button></a>
+                            </div>
+                    </section>
+                    </div>
+                </div>
+                <div class="wrapper" id="sec4">
+
+                    <div class="sec4 album">
+                        <h3 class="section-title2"><b>Contact</b><span>US</span></h3>
+                        <div class="social_media">
+                            <div class="items">
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-facebook-f  fa-2x">
+                                </i>
+                                </a>
+                            </div>
+                            <div class="items">
+                                <a href="https://twitter.com/Mannananxari" target="_blank">
+                                    <i class="fab fa-twitter  fa-2x">
+                                </i>
+                                </a>
+                            </div>
+                            <div class="items">
+                                <a href="https://www.instagram.com/themannananxari/" target="_blank">
+                                    <i class="fab fa-instagram  fa-2x">
+                                </i>
+                                </a>
+                            </div>
+                            <div class="items">
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-linkedin-in  fa-2x">
+                                </i>
+                                </a>
+                            </div>
+                            <div class="items">
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-pinterest-p  fa-2x">
+                                </i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        &copy; 2022 m...EMMET | All Rights Reserved
+                    </div>
+
+
+                </div>
+            </div>
+    </section>
+</body>
+
+
+</html>
+<script src="assets/script/script.js"></script>
